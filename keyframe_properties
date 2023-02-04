@@ -1,0 +1,407 @@
+                                                                                                                                                                                
+																																												                                                                                         
+                 made by krzysiula#7060 if you find something new feel free to dm me on discord or fork the repo, just make sure to leave credit                  
+																																												                                                                                         
+																																												                                                                                         
+																																												                                                                                         
+            **DISCLAIMER** keep in mind many things i say here may be partially or completely incorrect, if i'm not 100% sure about an information                               
+                           i will put "**OPINION**" next to it                                                                                                                   
+																																												                                                                                         
+																																												                                                                                         
+																																												                                                                                         
+This documentation is intended to help you play around with the behavior of particles ** ~ NOT TO CREATE THEM FROM SCRATCH ~ **                                                  
+																																												                                                                                         
+																																												                                                                                         
+**OPINION**  from what i understand after playing with the file, many particle effects don't have a dedicated mesh, only a plane that's automatically                            
+             generated and the texture specified in the .ypt is applied onto it, whenever the particle plays                                                                     
+																																												                                                                                         
+																																												                                                                                         
+																																												                                                                                         
+			 Many keyframe properties have 2 variations, one with *Min* and the other with *Max* in their names, when the two values are not exactly equal,                            
+			 the game will use a random value from within that range                                                                                                                   
+																																												                                                                                         
+																																												                                                                                         
+																																												                                                                                         
+**OPINION**	 Some keyframe properties have even 4 variations, it's quite complicated to explain with text so here's a little drawing i made to explain it better                 
+**OPINION**  the link: https://imgur.com/a/vFWa8Zq                                                                                                                               
+**OPINION**  basically the ones with equal unknown0 and unknown4 values are linked, i don't fully understand it, just be aware something like this exists                        
+																																												                                                                                         
+																																												                                                                                         
+																																												                                                                                         
+			*by saying emitter i mean 1 part of particle here's what i mean: https://imgur.com/a/VsYK1X0 																		                                           
+=======================================================================================================================================================================
+
+
+
+**EffectRuleDictionary's keyframe properties:** 
+
+
+<Name>ptxEmitterRule:m_playbackRateScalarKFP</Name> ## KFP stands for keyframe property
+
+## **OPINION** probably affects/overrides particleLifeKFP
+
+
+
+
+<Name>ptxEffectRule:m_dataSphereKFP</Name>
+		
+	   
+## no idea how it works
+	   
+
+
+
+
+<Name>ptxEffectRule:m_zoomScalarKFP</Name>
+
+       <Unknown0 value="0" />
+       <Unknown4 value="0" />
+       <Unknown10 value="700" /> X axis
+       <Unknown14 value="800" /> Y axis
+       <Unknown18 value="0" /> Z axis
+       <Unknown1C value="0" />
+	   
+## responsible for scaling emitters
+
+
+
+
+
+
+
+<Name>ptxEmitterRule:m_sizeScalarKFP</Name>
+		
+            <Unknown0 value="0" /> ?
+            <Unknown4 value="0" /> ?
+            <Unknown10 value="254.5414" /> X axis
+            <Unknown14 value="254.5414" /> Y axis
+            <Unknown18 value="254.5414" /> Z axis
+            <Unknown1C value="100" /> ?
+			
+## responsible for scaling emitters
+
+
+
+
+
+
+
+<Name>ptxEmitterRule:m_spawnRateOverTimeKFP</Name>
+
+        <Unknown0 value="0" /> ?
+        <Unknown4 value="0" /> ?
+        <Unknown10 value="10" /> ?
+        <Unknown14 value="10" /> ?
+        <Unknown18 value="10" /> ?
+        <Unknown1C value="0" /> ?
+
+## reponsible for spawning emitters over time (probably measured in frames)
+
+
+
+
+
+
+
+<Name>ptxu_Colour:m_rgbaMinKFP</Name> ## rgbaMaxKFP works the same
+
+            <Unknown0 value="0" /> ?
+            <Unknown4 value="0" /> ?
+            <Unknown10 value="0.705179" /> red channel?
+            <Unknown14 value="0.732523" /> green channel?
+            <Unknown18 value="0.705179" /> blue channel?
+            <Unknown1C value="1" /> alpha channel?
+			
+## **OPINION** changes the color of the texture
+
+
+
+
+
+
+
+<Name>ptxEmitterRule:m_particleLifeKFP</Name>
+
+            <Unknown0 value="0" /> always set to 0
+            <Unknown4 value="0" /> always set to 0
+            <Unknown10 value="2" /> value changing the particle life's lenght
+            <Unknown14 value="3" /> value changing the particle life's lenght
+            <Unknown18 value="0.01" /> typically set to 0 or 0.01
+            <Unknown1C value="0.01" /> typically set to 0 or 0.01
+			
+## changes the lifespan of the particle
+
+
+
+
+
+
+
+<Name>ptxEmitterRule:m_spawnRateOverTimeKFP</Name>
+
+            <Unknown0 value="0" /> ?
+            <Unknown4 value="0" /> ?
+            <Unknown10 value="5" /> value affecting the spawn rate over time
+            <Unknown14 value="9" /> value affecting the spawn rate over time
+            <Unknown18 value="0" /> ?
+            <Unknown1C value="0" /> ?
+			
+## affects the spawn rate over time
+
+
+
+
+=======================================================================================================================================================================
+
+
+
+
+**EmitterRuleDictionary's keyframe properties:** 
+
+
+<Name>ptxCreationDomain:m_positionKFP</Name>
+
+       <Unknown0 value="0" /> ?
+       <Unknown4 value="0" /> ?
+       <Unknown10 value="-0.02" /> X axis
+       <Unknown14 value="0.04" /> Y axis
+       <Unknown18 value="-0.02" /> Z axis
+       <Unknown1C value="0" /> ?
+	   
+## specifies emitter's offset upon spawning
+
+
+
+
+
+
+
+<Name>ptxTargetDomain:m_positionKFP</Name>
+
+       <Unknown0 value="0" /> ?
+       <Unknown4 value="0" /> ?
+       <Unknown10 value="0.011154" /> x axis
+       <Unknown14 value="-2" /> y axis
+       <Unknown18 value="0" /> z axis
+       <Unknown1C value="0" /> ?
+	   
+## specifies the position the emitter is gonna end up at
+
+
+
+
+
+<Name>ptxCreationDomain:m_rotationKFP</Name>
+
+       <Unknown0 value="0" /> ?
+       <Unknown4 value="0" /> ?
+       <Unknown10 value="90" /> X axis, measured in degrees
+       <Unknown14 value="0" /> Y axis, measured in degrees
+       <Unknown18 value="0" /> Z axis, measured in degrees
+       <Unknown1C value="0" /> ?
+
+## specifies emitter's rotation upon spawning
+
+
+
+
+<Name>ptxTargetDomain:m_sizeOuterKFP</Name>
+
+## no idea what it does
+
+
+
+
+<Name>ptxTargetDomain:m_sizeInnerKFP</Name>
+
+## no idea what it does
+
+
+
+
+
+<Name>ptxEmitterRule:m_spawnRateOverDistKFP</Name>
+
+## spawn rate over distance, no idea how to use it
+
+
+
+
+
+<Name>ptxEmitterRule:m_speedScalarKFP</Name>
+
+       <Unknown0 value="0" /> ?
+       <Unknown4 value="0" /> ?
+       <Unknown10 value="0.8" /> x axis??
+       <Unknown14 value="1.4" /> y axis??
+       <Unknown18 value="0" /> z axis??
+       <Unknown1C value="0" /> ?
+
+## **OPINION** scales speed of the emitter (probably multiplies the speed given by some other KFP)
+
+
+
+
+
+
+
+<Name>ptxEmitterRule:m_accnScalarKFP</Name>
+
+## no idea what it does
+
+
+
+
+<Name>ptxEmitterRule:m_matrixWeightScalarKFP</Name>
+
+## no idea what it does
+
+
+
+
+<Name>ptxEmitterRule:m_dampeningScalarKFP</Name>
+
+## no idea what it does
+
+
+
+
+<Name>ptxEmitterRule:m_inheritVelocityKFP</Name>
+
+       <Unknown0 value="0" /> ?
+       <Unknown4 value="0" /> ? 
+       <Unknown10 value="100" /> x axis
+       <Unknown14 value="100" /> y axis
+       <Unknown18 value="0" /> z axis
+       <Unknown1C value="0" /> ?
+	   
+## specifies the emitter's velocity 
+
+
+
+=======================================================================================================================================================================
+
+
+
+**ParticleRuleDictionary's keyframe properties:**
+
+
+
+
+<Name>ptxu_Acceleration:m_xyzMinKFP</Name> ## ptxu_Acceleration:m_xyzMaxKFP works the same, just for max value 
+
+        <Unknown0 value="0" /> ?
+        <Unknown4 value="0" /> ?
+        <Unknown10 value="1.5" /> x axis
+        <Unknown14 value="-2.2" /> y axis
+        <Unknown18 value="1.2" /> z axis
+        <Unknown1C value="0" /> ?
+		
+## specifies acceleration of emitters
+
+
+
+
+
+
+
+<Name>ptxu_Rotation:m_initialAngleMinKFP</Name> ## ptxu_Rotation:m_initialAngleMaxKFP works the same, just for max value
+
+        <Unknown0 value="0" /> ?
+        <Unknown4 value="0" /> ?
+        <Unknown10 value="-35" /> x axis, measured in degrees
+        <Unknown14 value="0" /> y axis, measured in degrees
+        <Unknown18 value="0" /> z axis, measured in degrees
+        <Unknown1C value="0" /> ?
+		
+## specifies the emitter's angle upon spawning
+
+
+
+
+
+
+
+<Name>ptxu_Rotation:m_angleMinKFP</Name> ## ptxu_Rotation:m_angleMaxKFP works the same, just for max value
+
+        <Unknown0 value="0" /> ?
+        <Unknown4 value="0" /> ?
+        <Unknown10 value="10" /> x axis, measured in degrees
+        <Unknown14 value="0" /> y axis, measured in degrees
+        <Unknown18 value="0" /> z axis, measured in degrees
+        <Unknown1C value="0" /> ?
+		
+## specifies the rotation the emitter will achieve 
+
+
+
+
+
+
+
+<Name>ptxu_Size:m_whdMinKFP</Name> ## ptxu_Size:m_whdMaxKFP works the same, just for max value
+
+        <Unknown0 value="0" />
+        <Unknown4 value="0" />
+        <Unknown10 value="0.2" />
+        <Unknown14 value="0.2" />
+        <Unknown18 value="0" />
+        <Unknown1C value="0" />
+		
+## specifies the size of emitters, don't know how it works, unk0 and unk4 are used
+
+
+
+
+
+<Name>ptxu_AnimateTexture:m_animRateKFP</Name>
+
+## no idea how to use it
+
+
+
+<Name>ptxu_Size:m_tblrScalarKFP</Name>
+
+        <Unknown0 value="0" /> ?
+        <Unknown4 value="0" /> ?
+        <Unknown10 value="1" /> x axis??
+        <Unknown14 value="1" /> y axis??
+        <Unknown18 value="1" /> z axis??
+        <Unknown1C value="1" /> ?
+## related to size, no idea how to use it
+
+
+
+
+<Name>ptxu_Colour:m_emissiveIntensityKFP</Name>
+
+## specifies intensity of emissiveness, if there's a shader applied supporting it
+
+
+
+
+not a keyframe property but it affects some:
+
+     <Type value="Wind" />
+     <UnknownD0 value="20" />
+     <UnknownD4 value="50" />
+     <UnknownD8 value="1" />
+     <UnknownDC value="2" />
+     <UnknownE0 value="0" />
+
+## **OPINION** specifies wind direction and speed
+
+
+
+
+
+<Name>ptxu_Wind:m_influenceKFP</Name>
+
+        <Unknown0 value="0" /> ?
+        <Unknown4 value="0" /> ?
+        <Unknown10 value="0" /> x axis??
+        <Unknown14 value="0" /> y axis??
+        <Unknown18 value="0" /> z axis??
+        <Unknown1C value="0" /> ?
+		
+## specifies how the emitter will by affected by wind 
