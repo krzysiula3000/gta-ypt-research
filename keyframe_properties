@@ -5,11 +5,11 @@
 																																												                                                                                         
 																																												                                                                                         
             **DISCLAIMER** keep in mind many things i say here may be partially or completely incorrect, if i'm not 100% sure about an information                               
-                           i will put "**OPINION**" next to it                                                                                                                   
+                           i will put "**OPINION**" next to it, if i'm wrong just contact me i will change anything that's incorrect                                                                                                               
 																																												                                                                                         
 																																												                                                                                         
 																																												                                                                                         
-This documentation is intended to help you play around with the behavior of particles ** ~ NOT TO CREATE THEM FROM SCRATCH ~ **                                                  
+This documentation is intended to help you play around with the behavior of particles, and to create a template for further documentation ** ~ NOT TO CREATE THEM FROM SCRATCH ~ **                                                  
 																																												                                                                                         
 																																												                                                                                         
 **OPINION**  from what i understand after playing with the file, many particle effects don't have a dedicated mesh, only a plane that's automatically                            
