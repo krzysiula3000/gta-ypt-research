@@ -405,3 +405,39 @@ not a keyframe property but it affects some:
         <Unknown1C value="0" /> ?
 		
 ## specifies how the emitter will by affected by wind 
+
+
+
+
+
+
+
+<Name>ptxu_Noise:m_velNoiseMineKFP</Name> ## ptxu_Noise:m_velNoiseMineKFP works the same just for max value
+
+        <Unknown0 value="0" /> ?
+        <Unknown4 value="0" /> ?
+        <Unknown10 value="1" /> x axis
+        <Unknown14 value="1" /> y axis
+        <Unknown18 value="0" /> z axis
+        <Unknown1C value="0" /> ?
+	
+## introduces noise to particle's velocity
+
+
+
+
+
+
+
+<Name>ptxu_Noise:m_posNoiseMinKFP</Name> ## ptxu_Noise:m_posNoiseMinKFP works the same, just for max value
+
+        <Unknown0 value="0" /> ?
+        <Unknown4 value="0" /> ?
+        <Unknown10 value="1" /> 
+        <Unknown14 value="1" />
+        <Unknown18 value="0" />
+        <Unknown1C value="0" /> ?
+
+
+
+## introduces noise to particle's position
