@@ -433,9 +433,9 @@ not a keyframe property but it affects some:
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
-        <Unknown10 value="1" /> 
-        <Unknown14 value="1" />
-        <Unknown18 value="0" />
+        <Unknown10 value="1" /> x axis
+        <Unknown14 value="1" /> y axis
+        <Unknown18 value="0" /> z axis
         <Unknown1C value="0" /> ?
 
 
