@@ -17,8 +17,8 @@ This documentation is intended to help you play around with the behavior of part
 																																												                                                                                         
 																																												                                                                                         
 																																												                                                                                         
-			 Many keyframe properties have 2 variations, one with *Min* and the other with *Max* in their names, when the two values are not exactly equal,                            
-			 the game will use a random value from within that range                                                                                                                   
+		Many keyframe properties have 2 variations, one with *Min* and the other with *Max* in their names, when the two values are not exactly equal,                            
+		the game will use a random value from within that range                                                                                                                   
 																																												                                                                                         
 																																												                                                                                         
 																																												                                                                                         
@@ -28,7 +28,7 @@ This documentation is intended to help you play around with the behavior of part
 																																												                                                                                         
 																																												                                                                                         
 																																												                                                                                         
-			*by saying emitter i mean 1 part of particle here's what i mean: https://imgur.com/a/VsYK1X0 																		                                           
+			*by saying emitter here's what i'm talking about: https://imgur.com/a/VsYK1X0 																		                                           
 =======================================================================================================================================================================
 
 
@@ -36,30 +36,33 @@ This documentation is intended to help you play around with the behavior of part
 **EffectRuleDictionary's keyframe properties:** 
 
 
-<Name>ptxEmitterRule:m_playbackRateScalarKFP</Name> ## KFP stands for keyframe property
+
+
+
+-- ptxEmitterRule:m_playbackRateScalarKFP ## KFP stands for keyframe property
+
 
 ## **OPINION** probably affects/overrides particleLifeKFP
 
 
 
-
-<Name>ptxEffectRule:m_dataSphereKFP</Name>
+-- ptxEffectRule:m_dataSphereKFP
 		
 	   
-## no idea how it works
+## no idea what it does
 	   
 
 
 
 
-<Name>ptxEffectRule:m_zoomScalarKFP</Name>
+-- ptxEffectRule:m_zoomScalarKFP
 
-       <Unknown0 value="0" />
-       <Unknown4 value="0" />
-       <Unknown10 value="700" /> X axis
-       <Unknown14 value="800" /> Y axis
-       <Unknown18 value="0" /> Z axis
-       <Unknown1C value="0" />
+       	    <Unknown0 value="0" />
+       	    <Unknown4 value="0" />
+       	    <Unknown10 value="700" /> X axis
+       	    <Unknown14 value="800" /> Y axis
+       	    <Unknown18 value="0" /> Z axis
+       	    <Unknown1C value="0" />
 	   
 ## responsible for scaling emitters
 
@@ -69,7 +72,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxEmitterRule:m_sizeScalarKFP</Name>
+-- ptxEmitterRule:m_sizeScalarKFP
 		
             <Unknown0 value="0" /> ?
             <Unknown4 value="0" /> ?
@@ -86,14 +89,14 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxEmitterRule:m_spawnRateOverTimeKFP</Name>
+-- ptxEmitterRule:m_spawnRateOverTimeKFP
 
-        <Unknown0 value="0" /> ?
-        <Unknown4 value="0" /> ?
-        <Unknown10 value="10" /> ?
-        <Unknown14 value="10" /> ?
-        <Unknown18 value="10" /> ?
-        <Unknown1C value="0" /> ?
+            <Unknown0 value="0" /> ?
+            <Unknown4 value="0" /> ?
+            <Unknown10 value="10" /> ?
+            <Unknown14 value="10" /> ?
+            <Unknown18 value="10" /> ?
+            <Unknown1C value="0" /> ?
 
 ## reponsible for spawning emitters over time (probably measured in frames)
 
@@ -103,7 +106,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxu_Colour:m_rgbaMinKFP</Name> ## rgbaMaxKFP works the same
+-- ptxu_Colour:m_rgbaMinKFP ## rgbaMaxKFP works the same
 
             <Unknown0 value="0" /> ?
             <Unknown4 value="0" /> ?
@@ -120,7 +123,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxEmitterRule:m_particleLifeKFP</Name>
+-- ptxEmitterRule:m_particleLifeKFP
 
             <Unknown0 value="0" /> always set to 0
             <Unknown4 value="0" /> always set to 0
@@ -137,7 +140,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxEmitterRule:m_spawnRateOverTimeKFP</Name>
+-- ptxEmitterRule:m_spawnRateOverTimeKFP
 
             <Unknown0 value="0" /> ?
             <Unknown4 value="0" /> ?
@@ -159,7 +162,8 @@ This documentation is intended to help you play around with the behavior of part
 **EmitterRuleDictionary's keyframe properties:** 
 
 
-<Name>ptxCreationDomain:m_positionKFP</Name>
+
+-- ptxCreationDomain:m_positionKFP
 
        <Unknown0 value="0" /> ?
        <Unknown4 value="0" /> ?
@@ -176,7 +180,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxTargetDomain:m_positionKFP</Name>
+-- ptxTargetDomain:m_positionKFP
 
        <Unknown0 value="0" /> ?
        <Unknown4 value="0" /> ?
@@ -191,7 +195,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxCreationDomain:m_rotationKFP</Name>
+-- ptxCreationDomain:m_rotationKFP
 
        <Unknown0 value="0" /> ?
        <Unknown4 value="0" /> ?
@@ -205,14 +209,14 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxTargetDomain:m_sizeOuterKFP</Name>
+-- ptxTargetDomain:m_sizeOuterKFP
 
 ## no idea what it does
 
 
 
 
-<Name>ptxTargetDomain:m_sizeInnerKFP</Name>
+-- ptxTargetDomain:m_sizeInnerKFP
 
 ## no idea what it does
 
@@ -220,7 +224,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxEmitterRule:m_spawnRateOverDistKFP</Name>
+-- ptxEmitterRule:m_spawnRateOverDistKFP
 
 ## spawn rate over distance, no idea how to use it
 
@@ -228,7 +232,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxEmitterRule:m_speedScalarKFP</Name>
+-- ptxEmitterRule:m_speedScalarKFP
 
        <Unknown0 value="0" /> ?
        <Unknown4 value="0" /> ?
@@ -245,35 +249,35 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxEmitterRule:m_accnScalarKFP</Name>
+-- ptxEmitterRule:m_accnScalarKFP
 
 ## no idea what it does
 
 
 
 
-<Name>ptxEmitterRule:m_matrixWeightScalarKFP</Name>
+-- ptxEmitterRule:m_matrixWeightScalarKFP
 
 ## no idea what it does
 
 
 
 
-<Name>ptxEmitterRule:m_dampeningScalarKFP</Name>
+-- ptxEmitterRule:m_dampeningScalarKFP
 
 ## no idea what it does
 
 
 
 
-<Name>ptxEmitterRule:m_inheritVelocityKFP</Name>
+-- ptxEmitterRule:m_inheritVelocityKFP
 
-       <Unknown0 value="0" /> ?
-       <Unknown4 value="0" /> ? 
-       <Unknown10 value="100" /> x axis
-       <Unknown14 value="100" /> y axis
-       <Unknown18 value="0" /> z axis
-       <Unknown1C value="0" /> ?
+        <Unknown0 value="0" /> ?
+        <Unknown4 value="0" /> ? 
+        <Unknown10 value="100" /> x axis
+        <Unknown14 value="100" /> y axis
+        <Unknown18 value="0" /> z axis
+        <Unknown1C value="0" /> ?
 	   
 ## specifies the emitter's velocity 
 
@@ -288,7 +292,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxu_Acceleration:m_xyzMinKFP</Name> ## ptxu_Acceleration:m_xyzMaxKFP works the same, just for max value 
+-- ptxu_Acceleration:m_xyzMinKFP
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
@@ -305,7 +309,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxu_Rotation:m_initialAngleMinKFP</Name> ## ptxu_Rotation:m_initialAngleMaxKFP works the same, just for max value
+-- ptxu_Rotation:m_initialAngleMinKFP
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
@@ -322,7 +326,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxu_Rotation:m_angleMinKFP</Name> ## ptxu_Rotation:m_angleMaxKFP works the same, just for max value
+-- ptxu_Rotation:m_angleMinKFP 
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
@@ -339,7 +343,7 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxu_Size:m_whdMinKFP</Name> ## ptxu_Size:m_whdMaxKFP works the same, just for max value
+-- ptxu_Size:m_whdMinKFP
 
         <Unknown0 value="0" />
         <Unknown4 value="0" />
@@ -354,13 +358,13 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxu_AnimateTexture:m_animRateKFP</Name>
+-- ptxu_AnimateTexture:m_animRateKFP
 
-## no idea how to use it
+## uv anim?
 
 
 
-<Name>ptxu_Size:m_tblrScalarKFP</Name>
+-- ptxu_Size:m_tblrScalarKFP
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
@@ -373,21 +377,21 @@ This documentation is intended to help you play around with the behavior of part
 
 
 
-<Name>ptxu_Colour:m_emissiveIntensityKFP</Name>
+-- ptxu_Colour:m_emissiveIntensityKFP
 
-## specifies intensity of emissiveness, if there's a shader applied supporting it
-
-
+## specifies intensity of emissiveness, if it's using a shader supporting it
 
 
-not a keyframe property but it affects some:
 
-     <Type value="Wind" />
-     <UnknownD0 value="20" />
-     <UnknownD4 value="50" />
-     <UnknownD8 value="1" />
-     <UnknownDC value="2" />
-     <UnknownE0 value="0" />
+
+not a keyframe property but it affects emitters with ptxu_Wind:m_influenceKFP
+
+     	<Type value="Wind" />
+     	<UnknownD0 value="20" />
+     	<UnknownD4 value="50" />
+     	<UnknownD8 value="1" />
+     	<UnknownDC value="2" />
+     	<UnknownE0 value="0" />
 
 ## **OPINION** specifies wind direction and speed
 
@@ -395,7 +399,7 @@ not a keyframe property but it affects some:
 
 
 
-<Name>ptxu_Wind:m_influenceKFP</Name>
+-- ptxu_Wind:m_influenceKFP
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
@@ -404,7 +408,7 @@ not a keyframe property but it affects some:
         <Unknown18 value="0" /> z axis??
         <Unknown1C value="0" /> ?
 		
-## specifies how the emitter will by affected by wind 
+## specifies how much will the emitter be affected by wind 
 
 
 
@@ -412,7 +416,7 @@ not a keyframe property but it affects some:
 
 
 
-<Name>ptxu_Noise:m_velNoiseMineKFP</Name> ## ptxu_Noise:m_velNoiseMineKFP works the same just for max value
+-- ptxu_Noise:m_velNoiseMineKFP
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
@@ -429,7 +433,7 @@ not a keyframe property but it affects some:
 
 
 
-<Name>ptxu_Noise:m_posNoiseMinKFP</Name> ## ptxu_Noise:m_posNoiseMinKFP works the same, just for max value
+-- ptxu_Noise:m_posNoiseMinKFP
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
@@ -437,7 +441,6 @@ not a keyframe property but it affects some:
         <Unknown14 value="1" /> y axis
         <Unknown18 value="0" /> z axis
         <Unknown1C value="0" /> ?
-
 
 
 ## introduces noise to particle's position
