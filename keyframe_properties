@@ -22,7 +22,7 @@ This documentation is intended to help you play around with the behavior of part
 																																												                                                                                         
 																																												                                                                                         
 																																												                                                                                         
-**OPINION**	 Some keyframe properties have even 4 variations, it's quite complicated to explain with text so here's a little drawing i made to explain it better                 
+**OPINION**  Some keyframe properties have even 4 variations, it's quite complicated to explain with text so here's a little drawing i made to explain it better                 
 **OPINION**  the link: https://imgur.com/a/vFWa8Zq                                                                                                                               
 **OPINION**  basically the ones with equal unknown0 and unknown4 values are linked, i don't fully understand it, just be aware something like this exists                        
 																																												                                                                                         
