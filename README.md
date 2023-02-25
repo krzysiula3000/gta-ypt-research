@@ -241,8 +241,8 @@ Many keyframe properties have 2 variations, one with `Min` and the other with `M
             <Unknown18 value="1" />   z axis??
             <Unknown1C value="1" /> ?
             
-### not a keyframe property but it affects emitters with ptxu_Wind:m_influenceKFP
-- specifies wind direction and speed
+### Wind
+- not a keyframe property, specifies wind direction and speed, affects emitters with ptxu_Wind:m_influenceKFP
  
      	      <Type value="Wind" />
      	      <UnknownD0 value="20" />
