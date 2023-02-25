@@ -36,9 +36,6 @@ This documentation is intended to help you play around with the behavior of part
 
 -- ptxEmitterRule:m_playbackRateScalarKFP ## KFP stands for keyframe property
 
-
-
-
          <Item>
              <Unknown0 value="0"/>
              <Unknown4 value="0"/>
