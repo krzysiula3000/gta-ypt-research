@@ -1,34 +1,29 @@
                                                                                                                                                                                 
-																																												                                                                                         
-                 made by krzysiula#7060 if you find something new feel free to dm me on discord or fork the repo, just make sure to leave credit                  
-																																												                                                                                         
-																																												                                                                                         
-																																												                                                                                         
+																							
+                                
+	    contributors: krzysiula#7060, w/#7263																	                                                                        
+																						     
+																						     
             **DISCLAIMER** keep in mind many things i say here may be partially or completely incorrect, if i'm not 100% sure about an information                               
-                           i will put "**OPINION**" next to it, if i'm wrong just contact me i will change anything that's incorrect                                                                                                               
-																																												                                                                                         
-																																												                                                                                         
-																																												                                                                                         
-This documentation is intended to help you play around with the behavior of particles, and to create a template for further documentation ** ~ NOT TO CREATE THEM FROM SCRATCH ~ **                                                  
-																																												                                                                                         
-																																												                                                                                         
+                           i will put "**OPINION**" next to it, if i'm wrong just contact me i will change anything that's incorrect                                                   
+																						
+																						
+																						
+This documentation is intended to help you play around with the behavior of particles, and to create a template for further documentation ** ~ NOT TO CREATE THEM FROM SCRATCH ~ **     
+																						
+																						
 **OPINION**  from what i understand after playing with the file, many particle effects don't have a dedicated mesh, only a plane that's automatically                            
              generated and the texture specified in the .ypt is applied onto it, whenever the particle plays                                                                     
-																																												                                                                                         
-																																												                                                                                         
-																																												                                                                                         
-		Many keyframe properties have 2 variations, one with *Min* and the other with *Max* in their names, when the two values are not exactly equal,                            
-		the game will use a random value from within that range                                                                                                                   
-																																												                                                                                         
-																																												                                                                                         
-																																												                                                                                         
-**OPINION**  Some keyframe properties have even 4 variations, it's quite complicated to explain with text so here's a little drawing i made to explain it better                 
-**OPINION**  the link: https://imgur.com/a/vFWa8Zq                                                                                                                               
-**OPINION**  basically the ones with equal unknown0 and unknown4 values are linked, i don't fully understand it, just be aware something like this exists                        
-																																												                                                                                         
-																																												                                                                                         
-																																												                                                                                         
-			*by saying emitter here's what i'm talking about: https://imgur.com/a/VsYK1X0 																		                                           
+																						
+																						
+																						
+		Many keyframe properties have 2 variations, one with *Min* and the other with *Max* in their names, when the two values are not exactly equal,                          
+		the game will use a random value from within that range                                                                                                                 
+																							
+																											                                                                                         
+																							
+																		
+			*by saying emitter here's what i'm talking about: https://imgur.com/a/VsYK1X0 									
 =======================================================================================================================================================================
 
 
@@ -42,7 +37,20 @@ This documentation is intended to help you play around with the behavior of part
 -- ptxEmitterRule:m_playbackRateScalarKFP ## KFP stands for keyframe property
 
 
-## **OPINION** probably affects/overrides particleLifeKFP
+
+
+         <Item>
+             <Unknown0 value="0"/>
+             <Unknown4 value="0"/>
+             <Unknown10 value="1"/>   Playback rate factor
+             <Unknown14 value="0.01"/>   Always 0.01
+             <Unknown18 value="0.01"/>   Always 0.01
+             <Unknown1C value="0.01"/>   Always 0.01
+         </Item>
+
+## scales all keyframes, https://imgur.com/a/FvOQz9k
+
+
 
 
 
@@ -59,9 +67,9 @@ This documentation is intended to help you play around with the behavior of part
 
        	    <Unknown0 value="0" />
        	    <Unknown4 value="0" />
-       	    <Unknown10 value="700" /> X axis
-       	    <Unknown14 value="800" /> Y axis
-       	    <Unknown18 value="0" /> Z axis
+       	    <Unknown10 value="700" />   X axis
+       	    <Unknown14 value="800" />  Y axis
+       	    <Unknown18 value="0" />   Z axis
        	    <Unknown1C value="0" />
 	   
 ## responsible for scaling emitters
@@ -76,9 +84,9 @@ This documentation is intended to help you play around with the behavior of part
 		
             <Unknown0 value="0" /> ?
             <Unknown4 value="0" /> ?
-            <Unknown10 value="254.5414" /> X axis
-            <Unknown14 value="254.5414" /> Y axis
-            <Unknown18 value="254.5414" /> Z axis
+            <Unknown10 value="254.5414" />   X axis
+            <Unknown14 value="254.5414" />   Y axis
+            <Unknown18 value="254.5414" />   Z axis
             <Unknown1C value="100" /> ?
 			
 ## responsible for scaling emitters
@@ -108,14 +116,14 @@ This documentation is intended to help you play around with the behavior of part
 
 -- ptxu_Colour:m_rgbaMinKFP ## rgbaMaxKFP works the same
 
-            <Unknown0 value="0" /> ?
-            <Unknown4 value="0" /> ?
-            <Unknown10 value="0.705179" /> red channel?
-            <Unknown14 value="0.732523" /> green channel?
-            <Unknown18 value="0.705179" /> blue channel?
-            <Unknown1C value="1" /> alpha channel?
+            <Unknown0 value="0" />   ?
+            <Unknown4 value="0" />   ?
+            <Unknown10 value="0.705179" />   red channel (values 0-1)
+            <Unknown14 value="0.732523" />   green channel (values 0-1)
+            <Unknown18 value="0.705179" />   blue channel (values 0-1)
+            <Unknown1C value="1" />   alpha channel (values 0-1)
 			
-## **OPINION** changes the color of the texture
+## changes the color of the texture
 
 
 
@@ -125,12 +133,12 @@ This documentation is intended to help you play around with the behavior of part
 
 -- ptxEmitterRule:m_particleLifeKFP
 
-            <Unknown0 value="0" /> always set to 0
-            <Unknown4 value="0" /> always set to 0
-            <Unknown10 value="2" /> value changing the particle life's lenght
-            <Unknown14 value="3" /> value changing the particle life's lenght
-            <Unknown18 value="0.01" /> typically set to 0 or 0.01
-            <Unknown1C value="0.01" /> typically set to 0 or 0.01
+            <Unknown0 value="0" />   always set to 0
+            <Unknown4 value="0" />   always set to 0
+            <Unknown10 value="2" />   value changing the particle life's lenght
+            <Unknown14 value="3" />   value changing the particle life's lenght
+            <Unknown18 value="0.01" />   typically set to 0 or 0.01
+            <Unknown1C value="0.01" />   typically set to 0 or 0.01
 			
 ## changes the lifespan of the particle
 
@@ -144,8 +152,8 @@ This documentation is intended to help you play around with the behavior of part
 
             <Unknown0 value="0" /> ?
             <Unknown4 value="0" /> ?
-            <Unknown10 value="5" /> value affecting the spawn rate over time
-            <Unknown14 value="9" /> value affecting the spawn rate over time
+            <Unknown10 value="5" />   value affecting the spawn rate over time
+            <Unknown14 value="9" />   value affecting the spawn rate over time
             <Unknown18 value="0" /> ?
             <Unknown1C value="0" /> ?
 			
@@ -167,9 +175,9 @@ This documentation is intended to help you play around with the behavior of part
 
        <Unknown0 value="0" /> ?
        <Unknown4 value="0" /> ?
-       <Unknown10 value="-0.02" /> X axis
-       <Unknown14 value="0.04" /> Y axis
-       <Unknown18 value="-0.02" /> Z axis
+       <Unknown10 value="-0.02" />   X axis
+       <Unknown14 value="0.04" />   Y axis
+       <Unknown18 value="-0.02" />   Z axis
        <Unknown1C value="0" /> ?
 	   
 ## specifies emitter's offset upon spawning
@@ -184,9 +192,9 @@ This documentation is intended to help you play around with the behavior of part
 
        <Unknown0 value="0" /> ?
        <Unknown4 value="0" /> ?
-       <Unknown10 value="0.011154" /> x axis
-       <Unknown14 value="-2" /> y axis
-       <Unknown18 value="0" /> z axis
+       <Unknown10 value="0.011154" />   x axis
+       <Unknown14 value="-2" />   y axis
+       <Unknown18 value="0" />   z axis
        <Unknown1C value="0" /> ?
 	   
 ## specifies the position the emitter is gonna end up at
@@ -199,9 +207,9 @@ This documentation is intended to help you play around with the behavior of part
 
        <Unknown0 value="0" /> ?
        <Unknown4 value="0" /> ?
-       <Unknown10 value="90" /> X axis, measured in degrees
-       <Unknown14 value="0" /> Y axis, measured in degrees
-       <Unknown18 value="0" /> Z axis, measured in degrees
+       <Unknown10 value="90" />   X axis, measured in degrees
+       <Unknown14 value="0" />   Y axis, measured in degrees
+       <Unknown18 value="0" />   Z axis, measured in degrees
        <Unknown1C value="0" /> ?
 
 ## specifies emitter's rotation upon spawning
@@ -211,14 +219,14 @@ This documentation is intended to help you play around with the behavior of part
 
 -- ptxTargetDomain:m_sizeOuterKFP
 
-## no idea what it does
+## https://imgur.com/a/iigppl6
 
 
 
 
 -- ptxTargetDomain:m_sizeInnerKFP
 
-## no idea what it does
+## https://imgur.com/a/iigppl6
 
 
 
@@ -236,9 +244,9 @@ This documentation is intended to help you play around with the behavior of part
 
        <Unknown0 value="0" /> ?
        <Unknown4 value="0" /> ?
-       <Unknown10 value="0.8" /> x axis??
-       <Unknown14 value="1.4" /> y axis??
-       <Unknown18 value="0" /> z axis??
+       <Unknown10 value="0.8" />   x axis??
+       <Unknown14 value="1.4" />   y axis??
+       <Unknown18 value="0" />   z axis??
        <Unknown1C value="0" /> ?
 
 ## **OPINION** scales speed of the emitter (probably multiplies the speed given by some other KFP)
@@ -251,7 +259,19 @@ This documentation is intended to help you play around with the behavior of part
 
 -- ptxEmitterRule:m_accnScalarKFP
 
-## no idea what it does
+
+       <Unknown0 value="0" /> ?
+       <Unknown4 value="0" /> ?
+       <Unknown10 value="0.8" />   x axis
+       <Unknown14 value="1.4" />   y axis
+       <Unknown18 value="0" />   z axis
+       <Unknown1C value="0" /> ?
+
+
+## introduces acceleration to the particles
+
+
+
 
 
 
@@ -265,7 +285,15 @@ This documentation is intended to help you play around with the behavior of part
 
 -- ptxEmitterRule:m_dampeningScalarKFP
 
-## no idea what it does
+        <Unknown0 value="0" /> ?
+        <Unknown4 value="0" /> ? 
+        <Unknown10 value="100" />   x axis?
+        <Unknown14 value="100" />   y axis?
+        <Unknown18 value="0" />   z axis?
+        <Unknown1C value="0" /> ?
+	
+
+## **OPINION** It seems to dampen the movement of particles in specified directions, adds some inertia to them
 
 
 
@@ -274,9 +302,9 @@ This documentation is intended to help you play around with the behavior of part
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ? 
-        <Unknown10 value="100" /> x axis
-        <Unknown14 value="100" /> y axis
-        <Unknown18 value="0" /> z axis
+        <Unknown10 value="100" />   x axis
+        <Unknown14 value="100" />   y axis
+        <Unknown18 value="0" />   z axis
         <Unknown1C value="0" /> ?
 	   
 ## specifies the emitter's velocity 
@@ -296,9 +324,9 @@ This documentation is intended to help you play around with the behavior of part
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
-        <Unknown10 value="1.5" /> x axis
-        <Unknown14 value="-2.2" /> y axis
-        <Unknown18 value="1.2" /> z axis
+        <Unknown10 value="1.5" />   x axis
+        <Unknown14 value="-2.2" />   y axis
+        <Unknown18 value="1.2" />   z axis
         <Unknown1C value="0" /> ?
 		
 ## specifies acceleration of emitters
@@ -313,9 +341,9 @@ This documentation is intended to help you play around with the behavior of part
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
-        <Unknown10 value="-35" /> x axis, measured in degrees
-        <Unknown14 value="0" /> y axis, measured in degrees
-        <Unknown18 value="0" /> z axis, measured in degrees
+        <Unknown10 value="-35" />   x axis, measured in degrees
+        <Unknown14 value="0" />   y axis, measured in degrees
+        <Unknown18 value="0" />   z axis, measured in degrees
         <Unknown1C value="0" /> ?
 		
 ## specifies the emitter's angle upon spawning
@@ -330,9 +358,9 @@ This documentation is intended to help you play around with the behavior of part
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
-        <Unknown10 value="10" /> x axis, measured in degrees
-        <Unknown14 value="0" /> y axis, measured in degrees
-        <Unknown18 value="0" /> z axis, measured in degrees
+        <Unknown10 value="10" />   x axis, measured in degrees
+        <Unknown14 value="0" />   y axis, measured in degrees
+        <Unknown18 value="0" />   z axis, measured in degrees
         <Unknown1C value="0" /> ?
 		
 ## specifies the rotation the emitter will achieve 
@@ -345,14 +373,14 @@ This documentation is intended to help you play around with the behavior of part
 
 -- ptxu_Size:m_whdMinKFP
 
-        <Unknown0 value="0" />
-        <Unknown4 value="0" />
-        <Unknown10 value="0.2" />
-        <Unknown14 value="0.2" />
-        <Unknown18 value="0" />
-        <Unknown1C value="0" />
+        <Unknown0 value="0" />   
+        <Unknown4 value="0" />   
+        <Unknown10 value="0.2" />   x axis
+        <Unknown14 value="0.2" />   y axis
+        <Unknown18 value="0" />   z axis
+        <Unknown1C value="0" />   
 		
-## specifies the size of emitters, don't know how it works, unk0 and unk4 are used
+## specifies the size of emitters, unk0 and unk4 are often used
 
 
 
@@ -368,9 +396,9 @@ This documentation is intended to help you play around with the behavior of part
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
-        <Unknown10 value="1" /> x axis??
-        <Unknown14 value="1" /> y axis??
-        <Unknown18 value="1" /> z axis??
+        <Unknown10 value="1" />   x axis??
+        <Unknown14 value="1" />   y axis??
+        <Unknown18 value="1" />   z axis??
         <Unknown1C value="1" /> ?
 ## related to size, no idea how to use it
 
@@ -403,9 +431,9 @@ not a keyframe property but it affects emitters with ptxu_Wind:m_influenceKFP
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
-        <Unknown10 value="0" /> x axis??
-        <Unknown14 value="0" /> y axis??
-        <Unknown18 value="0" /> z axis??
+        <Unknown10 value="0" />   x axis??
+        <Unknown14 value="0" />   y axis??
+        <Unknown18 value="0" />   z axis??
         <Unknown1C value="0" /> ?
 		
 ## specifies how much will the emitter be affected by wind 
@@ -420,9 +448,9 @@ not a keyframe property but it affects emitters with ptxu_Wind:m_influenceKFP
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
-        <Unknown10 value="1" /> x axis
-        <Unknown14 value="1" /> y axis
-        <Unknown18 value="0" /> z axis
+        <Unknown10 value="1" />   x axis
+        <Unknown14 value="1" />   y axis
+        <Unknown18 value="0" />   z axis
         <Unknown1C value="0" /> ?
 	
 ## introduces noise to particle's velocity
@@ -437,9 +465,9 @@ not a keyframe property but it affects emitters with ptxu_Wind:m_influenceKFP
 
         <Unknown0 value="0" /> ?
         <Unknown4 value="0" /> ?
-        <Unknown10 value="1" /> x axis
-        <Unknown14 value="1" /> y axis
-        <Unknown18 value="0" /> z axis
+        <Unknown10 value="1" />   x axis
+        <Unknown14 value="1" />   y axis
+        <Unknown18 value="0" />   z axis
         <Unknown1C value="0" /> ?
 
 
