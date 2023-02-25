@@ -92,7 +92,7 @@ Many keyframe properties have 2 variations, one with `Min` and the other with `M
             <Unknown18 value="0" /> ?
             <Unknown1C value="0" /> ?
 
-============================================================================================
+===========================================================================
 
 ## **EmitterRuleDictionary's keyframe properties:**  
 
@@ -182,7 +182,7 @@ Many keyframe properties have 2 variations, one with `Min` and the other with `M
             <Unknown1C value="0" /> ?
         
         
-============================================================================================
+===========================================================================
  
 ## **ParticleRuleDictionary's keyframe properties:** 
 
