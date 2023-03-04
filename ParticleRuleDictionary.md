@@ -282,7 +282,7 @@ RGBA color tint applied to the particle and its emission brighteness. If particl
 
 ## Light
 **Unknown540** -  
-**Unknown544** -  
+**Unknown544** - flag - 0x101 enables soft light intensity decay
 **Unknown548** -  
 **Unknown54C** -  
   
