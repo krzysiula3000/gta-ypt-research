@@ -14,9 +14,12 @@ generated and the texture specified in the .ypt is applied onto it, whenever the
 Many keyframe properties have 2 variations, one with `Min` and the other with `Max` in their names, when the two values are not exactly equal, the game will use a random value from within that range
 
 
+### Unknown6C - every next UNK6C is 256 bigger than the previous one, starting value = 256, `OPINION`, it functions as an index of some sort
+_when adding more keyframe properties it's not necessary to keep the order of unk6c, you can use any value and it will work just fine,
+		it probably works like YMAP's GUID)_
 ## **EffectRuleDictionary's keyframe properties:** 
 
-### ptxEmitterRule:m_playbackRateScalarKFP ## KFP stands for keyframe property
+### ptxEmitterRule:m_playbackRateScalarKFP ## where KFP stands for keyframe property
 
 - [scales all keyframes](https://imgur.com/a/FvOQz9k)
 
@@ -73,7 +76,7 @@ Many keyframe properties have 2 variations, one with `Min` and the other with `M
             <Unknown1C value="1" />   alpha channel (values 0-1)
             
 ### ptxEmitterRule:m_particleLifeKFP
-- changes the lifespan of the [emitter](https://imgur.com/a/VsYK1X0)
+- changes the lifespan of the [particle](https://imgur.com/a/VsYK1X0)
  
             <Unknown0 value="0" />   always set to 0
             <Unknown4 value="0" />   always set to 0
@@ -110,7 +113,7 @@ Many keyframe properties have 2 variations, one with `Min` and the other with `M
             <Unknown1C value="0" /> ?
 
 ### ptxTargetDomain:m_positionKFP
-- specifies the position the [emitters](https://imgur.com/a/VsYK1X0) is gonna end up at
+- specifies the position the [emitter](https://imgur.com/a/VsYK1X0) is gonna end up at
  
             <Unknown0 value="0" /> ?
             <Unknown4 value="0" /> ?
