@@ -1,27 +1,26 @@
 # Texture Dictionary Properties
-##
-Name - Unique name used to reference this texture in ParticleRules' ShaderVars section
+**Name** - Unique name used to reference this texture in ParticleRules' ShaderVars section
 
-Unk32 - Unknown
+**Unk32** - 
 _(Usually 128 or 32)_
 
-Usage - 
+**Usage** - 
 _(DIFFUSE, NORMAL, SPEC)_
 
-UsageFlags
+**UsageFlags**
 
-ExtraFlags
+**ExtraFlags**
 
-Width - px
+**Width** - px
 
-Height - px
+**Height** - px
 
-MipLevels - Number of MipMaps, starts from 0
+**MipLevels** - Number of MipMaps, starts from 0
 
-Format - Compression format 
+**Format** - Compression format 
 _(D3DFMT_DXT1, D3DFMT_DXT5)_
 
-FileName - Name of the texture image file
+**FileName** - Name of the texture image file
 
 
 ## Example Structure
