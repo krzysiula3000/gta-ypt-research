@@ -96,8 +96,8 @@ All particle properties are described in this section.
 
 ### Unknown0 & Unknown4
 These settings are universal for all keyframes in all KFP types.  
-_UNCONFIRMED_ - define timeline position and lengh of each frame.  
-Will be omitted in the following sections.
+Define position and _length?_ of each frame on the particle life timeline.  
+For better readability, these two parameters are omitted in the following sections.  
 
 ## Age
 _Never used?_
@@ -280,6 +280,16 @@ RGBA color tint applied to the particle and its emission brighteness. If particl
 **Unknown5C** - _flag?_ -  
 **Unknown60** - _flag?_ -  
 
+## Light
+**Unknown540** -  
+**Unknown544** -  
+**Unknown548** -  
+**Unknown54C** -  
+  
+### ptxu_Light:m_rgbMinKFP
+### ptxu_Light:m_rgbMaxKFP
+### ptxu_Light:m_intensityKFP
+### ptxu_Light:m_rangeKFP
 
 ## Trail
 **UnknownC4** -  
