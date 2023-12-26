@@ -1,5 +1,5 @@
 # Keyframe properties research
-Contributors: krzysiula#7060, w/#7263
+Contributors: @krzysiula, @w_33_by
 
 ##
 `DISCLAIMER` keep in mind many things i say here may be partially or completely incorrect, if i'm not 100% sure about an information                               
