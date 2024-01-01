@@ -1,5 +1,7 @@
 # all keyframe properties' values explained, alongside their values, used and unused
 
+use notepad++ or vsc for viewing the file
+
 
 
 
