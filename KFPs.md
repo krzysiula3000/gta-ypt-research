@@ -1,3 +1,7 @@
+# all keyframe properties' values explained, alongside their values, used and unused
+
+
+
 
 	propertyid										type				xmin		xmax		xdelta			ymin		ymax		ydelta									values			
 
