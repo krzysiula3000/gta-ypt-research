@@ -1,3 +1,5 @@
+use notepad++ or visual studio code for viewing the file
+
 
 	propertyid										type				xmin		xmax		xdelta			ymin		ymax		ydelta												values			
 
