@@ -1,7 +1,7 @@
 # All unknown0 info gathered as for now
 
 ## IMPORTANT
-unknown4 acts as a multiplier to all the other values so:
+unknown4 acts as a multiplier to all the other values (only in ParticleRuleDictionary) so:
 
 * unk4 - 5.0
 * unk10 - 2.0
