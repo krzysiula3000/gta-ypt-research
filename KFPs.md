@@ -69,24 +69,13 @@ use notepad++ or visual studio code for viewing the file
 	ptxCreationDomain:m_rotationKFP"),				FLOAT3,				(0.0f,		1.0f,		0.01f),			(-360.0f,	360.0f,		0.01f),		|	"X",							|	"Y",							|	"Z");						|
 	ptxCreationDomain:m_sizeOuterKFP"),				FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		500.0f,		0.01f),		|	"Radius",						|	"Length");						|								|
 	ptxCreationDomain:m_sizeInnerKFP"),				FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		500.0f,		0.01f),		|	"Radius",						|	"Orbit	Radius");				|								|			
-				
-	ptxTargetDomain:m_positionKFP"),				FLOAT3,				(0.0f,		1.0f,		0.01f),			(-500.0f,	500.0f,		0.01f),		|	"X",							|	"Y",							|	"Z");						|
-	ptxTargetDomain:m_rotationKFP"),				FLOAT3,				(0.0f,		1.0f,		0.01f),			(-360.0f,	360.0f,		0.01f),		|	"X",							|	"Y",							|	"Z");						|
-	ptxTargetDomain:m_sizeOuterKFP"),				FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		500.0f,		0.01f),		|	"Radius",						|	"Length");						|								|
-	ptxTargetDomain:m_sizeInnerKFP"),				FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		500.0f,		0.01f),		|	"Radius",						|	"Orbit	Radius");				|								|			
-				
-	ptxAttractorDomain:m_positionKFP"),				FLOAT3,				(0.0f,		1.0f,		0.01f),			(-500.0f,	500.0f,		0.01f),		|	"X",							|	"Y",							|	"Z");						|
-	ptxAttractorDomain:m_rotationKFP"),				FLOAT3,				(0.0f,		1.0f,		0.01f),			(-360.0f,	360.0f,		0.01f),		|	"X",							|	"Y",							|	"Z");						|
-	ptxAttractorDomain:m_sizeOuterKFP"),			FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		500.0f,		0.01f),		|	"Radius",						|	"Length");						|								|
-	ptxAttractorDomain:m_sizeInnerKFP"),			FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		500.0f,		0.01f),		|	"Radius",						|	"Orbit	Radius");				|								|														
-
-
-
-
-
-
-
-
+		
+		
+		
+		
+		
+		
+		
 	ptxEffectRule:m_colourTintMinKFP"),				FLOAT4,				(0.0f,		1.0f,		0.01f),			(0.0f,		1.0f,		0.01f),		|	"Red",							|	"Green",						|	"Blue",						|	"Alpha");
 	ptxEffectRule:m_colourTintMaxKFP"),				FLOAT4,				(0.0f,		1.0f,		0.01f),			(0.0f,		1.0f,		0.01f),		|	"Red",							|	"Green",						|	"Blue",						|	"Alpha");
 	ptxEffectRule:m_zoomScalarKFP"),				FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		10000.0f,	0.01f),		|	"Min	%",						|	"Max	%");					|								|											
@@ -122,12 +111,8 @@ use notepad++ or visual studio code for viewing the file
 	ptxu_Noise:m_posNoiseMaxKFP"),					FLOAT3,				(0.0f,		1.0f,		0.01f),			(0.0f,		1000.0f,	0.01f),		|	"Max	X",						|	"Max	Y",						|	Max	Z");					|
 	ptxu_Noise:m_velNoiseMinKFP"),					FLOAT3,				(0.0f,		1.0f,		0.01f),			(0.0f,		1000.0f,	0.01f),		|	"Min	X",						|	"Min	Y",						|	MinZ");						|
 	ptxu_Noise:m_velNoiseMaxKFP"),					FLOAT3,				(0.0f,		1.0f,		0.01f),			(0.0f,		1000.0f,	0.01f),		|	"Max	X",						|	"Max	Y",						|	Max	Z");					|
-	ptxu_Rotation:m_initialAngleMinKFP"),			FLOAT,				(0.0f,		1.0f,		0.01f),			(-360.0f,	360.0f,		0.01f),		|	"Min");							|									|								|								
-	ptxu_Rotation:m_initialAngleMaxKFP"),			FLOAT,				(0.0f,		1.0f,		0.01f),			(-360.0f,	360.0f,		0.01f),		|	"Max");							|									|								|								
 	ptxu_Rotation:m_initialAngleMinKFP"),			FLOAT3,				(0.0f,		1.0f,		0.01f),			(-360.0f,	360.0f,		0.01f),		|	"X	Min",						|	"Y	Min",						|	"Z	Min");					|
 	ptxu_Rotation:m_initialAngleMaxKFP"),			FLOAT3,				(0.0f,		1.0f,		0.01f),			(-360.0f,	360.0f,		0.01f),		|	"X	Max",						|	"Y	Max",						|	"Z	Max");					|
-	ptxu_Rotation:m_angleMinKFP"),					FLOAT,				(0.0f,		1.0f,		0.01f),			(-1800.0f,	1800.0f,	0.01f),		|	"Min");							|									|								|		
-	ptxu_Rotation:m_angleMaxKFP"),					FLOAT,				(0.0f,		1.0f,		0.01f),			(-1800.0f,	1800.0f,	0.01f),		|	"Max");							|									|								|								
 	ptxu_Rotation:m_angleMinKFP"),					FLOAT3,				(0.0f,		1.0f,		0.01f),			(-1800.0f,	1800.0f,	0.01f),		|	"X	Min",						|	"Y	Min",						|	"Z	Min");					|	
 	ptxu_Rotation:m_angleMaxKFP"),					FLOAT3,				(0.0f,		1.0f,		0.01f),			(-1800.0f,	1800.0f,	0.01f),		|	"X	Max",						|	"Y	Max",						|	"Z	Max");					|	
 	ptxu_Size:m_whdMinKFP"),						FLOAT3,				(0.0f,		1.0f,		0.01f),			(0.0f,		1000.0f,	0.01f),		|	"Width	Min",					|	"Height	Min",					|	"Depth	Min");				|	
