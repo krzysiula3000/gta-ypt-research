@@ -45,10 +45,11 @@
   
 		//	attractor	domains																																																															
 		
-	ptxCreationDomain:m_positionKFP"),				FLOAT3,				(0.0f,		1.0f,		0.01f),			(-500.0f,	500.0f,		0.01f),		|	"X",							|	"Y",							|	"Z");						|
-	ptxCreationDomain:m_rotationKFP"),				FLOAT3,				(0.0f,		1.0f,		0.01f),			(-360.0f,	360.0f,		0.01f),		|	"X",							|	"Y",							|	"Z");						|
-	ptxCreationDomain:m_sizeOuterKFP"),				FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		500.0f,		0.01f),		|	"Radius",						|	"Length");						|							|
-	ptxCreationDomain:m_sizeInnerKFP"),				FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		500.0f,		0.01f),		|	"Radius",						|	"Orbit	Radius");				        |							|			
+	ptxAttractorDomain:m_positionKFP"),				FLOAT3,				(0.0f,		1.0f,		0.01f),			(-500.0f,	500.0f,		0.01f),		|	"X",							|	"Y",							|	"Z");
+	ptxAttractorDomain:m_rotationKFP"),				FLOAT3,				(0.0f,		1.0f,		0.01f),			(-360.0f,	360.0f,		0.01f),		|	"X",							|	"Y",							|	"Z");
+	ptxAttractorDomain:m_sizeOuterKFP"),				FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		500.0f,		0.01f),		|	"Radius",						|	"Length");
+	ptxAttractorDomain:m_sizeInnerKFP"),				FLOAT2,				(0.0f,		1.0f,		0.01f),			(0.0f,		500.0f,		0.01f),		|	"Radius",						|	"Orbit Radius");
+		
 		
 		
 		
