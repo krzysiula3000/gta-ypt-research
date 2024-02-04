@@ -1,4 +1,4 @@
-	propertyid										type				xmin		xmax		xdelta			ymin		ymax		ydelta												values			
+	propertyid							type				xmin		xmax		xdelta			ymin		ymax		ydelta												values			
  		
   		//	domains
 		//	box	domains	
